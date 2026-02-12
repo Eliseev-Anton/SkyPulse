@@ -1,0 +1,91 @@
+/* Общее */
+"app.name" = "SkyPulse";
+"common.ok" = "OK";
+"common.cancel" = "Cancel";
+"common.error" = "Error";
+"common.retry" = "Retry";
+"common.loading" = "Loading...";
+"common.offline" = "You are offline";
+"common.offline.subtitle" = "Showing cached data";
+
+/* Dashboard */
+"dashboard.title" = "SkyPulse";
+"dashboard.tracked.flights" = "Tracked Flights";
+"dashboard.quick.access" = "Quick Access";
+"dashboard.empty.title" = "No Tracked Flights";
+"dashboard.empty.subtitle" = "Search for a flight to start tracking";
+
+/* Поиск */
+"search.title" = "Search";
+"search.placeholder" = "Flight number, route, or airport";
+"search.history" = "Recent Searches";
+"search.history.title" = "Recent Searches";
+"search.history.clear" = "Clear";
+"search.results" = "Results";
+"search.no.results" = "No flights found";
+"search.empty.title" = "No Results";
+"search.empty.subtitle" = "Try a different flight number or route";
+"search.type.flight" = "Flight";
+"search.type.route" = "Route";
+"search.type.airport" = "Airport";
+
+/* Детали рейса */
+"detail.title" = "Details";
+"detail.route" = "Route";
+"detail.showOnMap" = "Show on Map";
+"detail.show.map" = "Show on Map";
+"detail.add.favorite" = "Add to Favorites";
+"detail.remove.favorite" = "Remove from Favorites";
+
+/* Секция статуса */
+"detail.status" = "Status";
+"detail.status.title" = "Status";
+"detail.status.altitude" = "Altitude";
+"detail.status.speed" = "Speed";
+"detail.status.heading" = "Heading";
+"detail.status.verticalRate" = "Vertical Rate";
+"detail.status.noData" = "Live data is not available";
+
+/* Секция информации */
+"detail.info" = "Flight Info";
+"detail.info.title" = "Details";
+"detail.info.airline" = "Airline";
+"detail.info.flightNumber" = "Flight";
+"detail.info.aircraft" = "Aircraft";
+"detail.info.registration" = "Registration";
+"detail.info.date" = "Date";
+
+/* Табло аэропорта */
+"board.title" = "Airport Board";
+"board.departures" = "Departures";
+"board.arrivals" = "Arrivals";
+
+/* Избранное */
+"favorites.title" = "Favorites";
+"favorites.empty.title" = "No Favorites";
+"favorites.empty.subtitle" = "Tap the heart icon on a flight to save it";
+
+/* Настройки */
+"settings.title" = "Settings";
+"settings.notifications" = "Push Notifications";
+"settings.notifications.subtitle" = "Get updates on flight status changes";
+"settings.clear.cache" = "Clear Cache";
+"settings.clearCache" = "Clear Cache";
+"settings.cacheCleared" = "Cache cleared";
+"settings.about" = "About";
+"settings.version" = "Version";
+
+/* Статусы рейсов */
+"status.scheduled" = "Scheduled";
+"status.active" = "In Flight";
+"status.landed" = "Landed";
+"status.cancelled" = "Cancelled";
+"status.incident" = "Incident";
+"status.diverted" = "Diverted";
+"status.unknown" = "Unknown";
+
+/* Уведомления */
+"notification.status.title" = "Flight Status Update";
+"notification.status.body" = "Flight %@ status changed to %@";
+"notification.reminder.title" = "Departure Reminder";
+"notification.reminder.body" = "Flight %@ departs in %d minutes";

@@ -1,0 +1,6 @@
+[
+  { "icao24": "a1b2c3", "latitude": 57.5, "longitude": 34.2, "altitude": 10668, "speed": 230, "heading": 320, "vertical_rate": 0, "is_on_ground": false, "last_updated": "2026-02-10T11:30:00+03:00" },
+  { "icao24": "d4e5f6", "latitude": 48.3, "longitude": 35.8, "altitude": 11277, "speed": 245, "heading": 25, "vertical_rate": -1.2, "is_on_ground": false, "last_updated": "2026-02-10T11:15:00+03:00" },
+  { "icao24": "j1k2l3", "latitude": 40.6413, "longitude": -73.7781, "altitude": 0, "speed": 0, "heading": 0, "vertical_rate": 0, "is_on_ground": true, "last_updated": "2026-02-10T18:00:00-05:00" },
+  { "icao24": "p7q8r9", "latitude": 55.4088, "longitude": 37.9063, "altitude": 0, "speed": 0, "heading": 0, "vertical_rate": 0, "is_on_ground": true, "last_updated": "2026-02-10T13:50:00+03:00" }
+]

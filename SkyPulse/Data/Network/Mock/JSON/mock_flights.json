@@ -1,0 +1,184 @@
+[
+  {
+    "id": "SU1234-2026-02-10",
+    "flight_number": "SU1234",
+    "airline": { "iata_code": "SU", "icao_code": "AFL", "name": "Aeroflot" },
+    "departure": {
+      "airport": { "icao_code": "UUEE", "iata_code": "SVO", "name": "Sheremetyevo International Airport", "city": "Moscow", "country": "Russia", "latitude": 55.9726, "longitude": 37.4146, "timezone": "Europe/Moscow" },
+      "terminal": "D",
+      "gate": "D12",
+      "scheduled_time": "2026-02-10T10:30:00+03:00",
+      "estimated_time": "2026-02-10T10:45:00+03:00",
+      "actual_time": "2026-02-10T10:50:00+03:00",
+      "delay": 20
+    },
+    "arrival": {
+      "airport": { "icao_code": "ULLI", "iata_code": "LED", "name": "Pulkovo Airport", "city": "Saint Petersburg", "country": "Russia", "latitude": 59.8003, "longitude": 30.2625, "timezone": "Europe/Moscow" },
+      "terminal": "1",
+      "gate": null,
+      "scheduled_time": "2026-02-10T12:00:00+03:00",
+      "estimated_time": "2026-02-10T12:10:00+03:00",
+      "actual_time": null,
+      "delay": null
+    },
+    "status": "active",
+    "aircraft": { "registration": "VP-BKC", "icao24": "a1b2c3", "model": "A321" },
+    "live_data": { "latitude": 57.5, "longitude": 34.2, "altitude": 10668, "speed": 230, "heading": 320, "vertical_rate": 0, "is_on_ground": false, "last_updated": "2026-02-10T11:30:00+03:00" }
+  },
+  {
+    "id": "TK1591-2026-02-10",
+    "flight_number": "TK1591",
+    "airline": { "iata_code": "TK", "icao_code": "THY", "name": "Turkish Airlines" },
+    "departure": {
+      "airport": { "icao_code": "LTFM", "iata_code": "IST", "name": "Istanbul Airport", "city": "Istanbul", "country": "Turkey", "latitude": 41.2753, "longitude": 28.7519, "timezone": "Europe/Istanbul" },
+      "terminal": "I",
+      "gate": "A7",
+      "scheduled_time": "2026-02-10T08:00:00+03:00",
+      "estimated_time": null,
+      "actual_time": "2026-02-10T08:05:00+03:00",
+      "delay": 5
+    },
+    "arrival": {
+      "airport": { "icao_code": "UUEE", "iata_code": "SVO", "name": "Sheremetyevo International Airport", "city": "Moscow", "country": "Russia", "latitude": 55.9726, "longitude": 37.4146, "timezone": "Europe/Moscow" },
+      "terminal": "D",
+      "gate": "D5",
+      "scheduled_time": "2026-02-10T12:30:00+03:00",
+      "estimated_time": "2026-02-10T12:25:00+03:00",
+      "actual_time": null,
+      "delay": null
+    },
+    "status": "active",
+    "aircraft": { "registration": "TC-JRL", "icao24": "d4e5f6", "model": "B777" },
+    "live_data": { "latitude": 48.3, "longitude": 35.8, "altitude": 11277, "speed": 245, "heading": 25, "vertical_rate": 0, "is_on_ground": false, "last_updated": "2026-02-10T11:15:00+03:00" }
+  },
+  {
+    "id": "LH1455-2026-02-10",
+    "flight_number": "LH1455",
+    "airline": { "iata_code": "LH", "icao_code": "DLH", "name": "Lufthansa" },
+    "departure": {
+      "airport": { "icao_code": "EDDF", "iata_code": "FRA", "name": "Frankfurt Airport", "city": "Frankfurt", "country": "Germany", "latitude": 50.0333, "longitude": 8.5706, "timezone": "Europe/Berlin" },
+      "terminal": "1",
+      "gate": "B24",
+      "scheduled_time": "2026-02-10T07:15:00+01:00",
+      "estimated_time": null,
+      "actual_time": "2026-02-10T07:15:00+01:00",
+      "delay": 0
+    },
+    "arrival": {
+      "airport": { "icao_code": "EGLL", "iata_code": "LHR", "name": "Heathrow Airport", "city": "London", "country": "United Kingdom", "latitude": 51.4700, "longitude": -0.4543, "timezone": "Europe/London" },
+      "terminal": "2",
+      "gate": "C41",
+      "scheduled_time": "2026-02-10T08:00:00+00:00",
+      "estimated_time": null,
+      "actual_time": "2026-02-10T07:55:00+00:00",
+      "delay": null
+    },
+    "status": "landed",
+    "aircraft": { "registration": "D-AISE", "icao24": "g7h8i9", "model": "A321neo" },
+    "live_data": null
+  },
+  {
+    "id": "AA100-2026-02-10",
+    "flight_number": "AA100",
+    "airline": { "iata_code": "AA", "icao_code": "AAL", "name": "American Airlines" },
+    "departure": {
+      "airport": { "icao_code": "KJFK", "iata_code": "JFK", "name": "John F. Kennedy International Airport", "city": "New York", "country": "United States", "latitude": 40.6413, "longitude": -73.7781, "timezone": "America/New_York" },
+      "terminal": "8",
+      "gate": "42",
+      "scheduled_time": "2026-02-10T19:00:00-05:00",
+      "estimated_time": null,
+      "actual_time": null,
+      "delay": null
+    },
+    "arrival": {
+      "airport": { "icao_code": "EGLL", "iata_code": "LHR", "name": "Heathrow Airport", "city": "London", "country": "United Kingdom", "latitude": 51.4700, "longitude": -0.4543, "timezone": "Europe/London" },
+      "terminal": "3",
+      "gate": null,
+      "scheduled_time": "2026-02-11T07:05:00+00:00",
+      "estimated_time": null,
+      "actual_time": null,
+      "delay": null
+    },
+    "status": "scheduled",
+    "aircraft": { "registration": "N717AN", "icao24": "j1k2l3", "model": "B777-300ER" },
+    "live_data": null
+  },
+  {
+    "id": "EK131-2026-02-10",
+    "flight_number": "EK131",
+    "airline": { "iata_code": "EK", "icao_code": "UAE", "name": "Emirates" },
+    "departure": {
+      "airport": { "icao_code": "OMDB", "iata_code": "DXB", "name": "Dubai International Airport", "city": "Dubai", "country": "United Arab Emirates", "latitude": 25.2532, "longitude": 55.3657, "timezone": "Asia/Dubai" },
+      "terminal": "3",
+      "gate": "A1",
+      "scheduled_time": "2026-02-10T03:35:00+04:00",
+      "estimated_time": null,
+      "actual_time": "2026-02-10T03:40:00+04:00",
+      "delay": 5
+    },
+    "arrival": {
+      "airport": { "icao_code": "UUEE", "iata_code": "SVO", "name": "Sheremetyevo International Airport", "city": "Moscow", "country": "Russia", "latitude": 55.9726, "longitude": 37.4146, "timezone": "Europe/Moscow" },
+      "terminal": "D",
+      "gate": "D20",
+      "scheduled_time": "2026-02-10T08:55:00+03:00",
+      "estimated_time": null,
+      "actual_time": "2026-02-10T08:50:00+03:00",
+      "delay": null
+    },
+    "status": "landed",
+    "aircraft": { "registration": "A6-EQP", "icao24": "m4n5o6", "model": "B777-300ER" },
+    "live_data": null
+  },
+  {
+    "id": "S72001-2026-02-10",
+    "flight_number": "S72001",
+    "airline": { "iata_code": "S7", "icao_code": "SBI", "name": "S7 Airlines" },
+    "departure": {
+      "airport": { "icao_code": "UUDD", "iata_code": "DME", "name": "Domodedovo International Airport", "city": "Moscow", "country": "Russia", "latitude": 55.4088, "longitude": 37.9063, "timezone": "Europe/Moscow" },
+      "terminal": null,
+      "gate": "18",
+      "scheduled_time": "2026-02-10T14:00:00+03:00",
+      "estimated_time": "2026-02-10T14:30:00+03:00",
+      "actual_time": null,
+      "delay": 30
+    },
+    "arrival": {
+      "airport": { "icao_code": "UNNT", "iata_code": "OVB", "name": "Tolmachevo Airport", "city": "Novosibirsk", "country": "Russia", "latitude": 55.0126, "longitude": 82.6507, "timezone": "Asia/Novosibirsk" },
+      "terminal": "A",
+      "gate": null,
+      "scheduled_time": "2026-02-10T22:00:00+07:00",
+      "estimated_time": "2026-02-10T22:30:00+07:00",
+      "actual_time": null,
+      "delay": 30
+    },
+    "status": "scheduled",
+    "aircraft": { "registration": "VP-BNG", "icao24": "p7q8r9", "model": "A320neo" },
+    "live_data": null
+  },
+  {
+    "id": "AF1234-2026-02-10",
+    "flight_number": "AF1234",
+    "airline": { "iata_code": "AF", "icao_code": "AFR", "name": "Air France" },
+    "departure": {
+      "airport": { "icao_code": "LFPG", "iata_code": "CDG", "name": "Charles de Gaulle Airport", "city": "Paris", "country": "France", "latitude": 49.0097, "longitude": 2.5479, "timezone": "Europe/Paris" },
+      "terminal": "2E",
+      "gate": "K35",
+      "scheduled_time": "2026-02-10T06:00:00+01:00",
+      "estimated_time": null,
+      "actual_time": null,
+      "delay": null
+    },
+    "arrival": {
+      "airport": { "icao_code": "KJFK", "iata_code": "JFK", "name": "John F. Kennedy International Airport", "city": "New York", "country": "United States", "latitude": 40.6413, "longitude": -73.7781, "timezone": "America/New_York" },
+      "terminal": "1",
+      "gate": null,
+      "scheduled_time": "2026-02-10T09:00:00-05:00",
+      "estimated_time": null,
+      "actual_time": null,
+      "delay": null
+    },
+    "status": "cancelled",
+    "aircraft": null,
+    "live_data": null
+  }
+]

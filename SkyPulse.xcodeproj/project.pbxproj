@@ -1,0 +1,1538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01CAD9BBBFD4035621B06ECE /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A0208AE38221533EA56980C2 /* SnapKit */; };
+		0496E27F6501B1D7B937E530 /* SearchStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72050B691091B4ED63C4D879 /* SearchStep.swift */; };
+		06171C618931AA0673E565FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDA6C3B197338F2C908E4818 /* LaunchScreen.storyboard */; };
+		07521699124167CD6562C942 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0693B6AA18BCB976EAAD64F7 /* AppConfiguration.swift */; };
+		0AABE9D125195FAB0E32D666 /* FlightMonitorServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FB4689FCF0C3C919C65B04 /* FlightMonitorServiceTests.swift */; };
+		0B98610678698C9E5DDBF14A /* FavoritesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253150E4589D18978F3DF48C /* FavoritesRepository.swift */; };
+		0D3730C4A8CE4EA6E080D43B /* Date+Formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1551B9BF66A901268D90EDDB /* Date+Formatting.swift */; };
+		0F26A85E770C5278F821FB53 /* UIFont+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3A9340CC5B6D37E4D78406 /* UIFont+Theme.swift */; };
+		0F5220117DEA97F02BD2F687 /* MockKeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C4974B232759A8848B17BC /* MockKeychainService.swift */; };
+		164DE3F85D7373C91C96E8F1 /* MockDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1C0DE183B731041806D025 /* MockDataProvider.swift */; };
+		16501BCBDCDF1420CB8AA189 /* SearchPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E20F1DEC21C3D2AB4B7D3C6 /* SearchPage.swift */; };
+		187D64ADBB79ED5FA4B53D13 /* FlightRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4401D9CB76D8894405A42076 /* FlightRepositoryProtocol.swift */; };
+		18E3DBD1D1442C045E277539 /* AirportRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEAE7E0B1B80DBAD7CD270C /* AirportRepository.swift */; };
+		1916A0298F29AAF8563AD3F5 /* UIView+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18816F960CA7E36D97704E7 /* UIView+Animations.swift */; };
+		197159DBC841186CBD741E7C /* FlightPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A169998498AEC6E52B541806 /* FlightPosition.swift */; };
+		202E5476E08E2BDF256099DB /* RealmAirport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A97AE4B1C25EA7F0F024518 /* RealmAirport.swift */; };
+		20A91BA50EAAD4CAAAD8164E /* FavoriteFlightCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1D0BB539D141D56D71A21F /* FavoriteFlightCell.swift */; };
+		2134AF8EBD3D66955CD4FBF3 /* AppStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9745F3BE1A72704BF56B61F /* AppStep.swift */; };
+		234663B80E826B4BC2EC626D /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99AC35BEC4441053205D745 /* EmptyStateView.swift */; };
+		236B4896A5B587EDFF3D8488 /* AirportBoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A682CEC696FD79CCA59DAC /* AirportBoardViewModel.swift */; };
+		25B0E7516B24F1FD7601C06D /* XCUIApplicationLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A354D186ACDAF6E62F6B29EA /* XCUIApplicationLaunch.swift */; };
+		268AF390D0FE40A4D3A51546 /* MockFlightRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDC9ADA1C6AA49891E2D6D4 /* MockFlightRepository.swift */; };
+		26E6862EC4312E2746F95DB5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 50970467DB4B567BD7C31D20 /* Localizable.strings */; };
+		27275A73C8EA311A3ED5DB3C /* FlightMonitorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76930AEB457AE996F218613 /* FlightMonitorService.swift */; };
+		2765DEEAEAEA246074AEEFDB /* Airport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C53E64AB2D1D4C49059B1A /* Airport.swift */; };
+		27770E30153E7642D8641640 /* FlightInfoSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2201988E9A4B74562D0C264A /* FlightInfoSection.swift */; };
+		2A59B3B7D315CD9F87EAC2F7 /* DashboardViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FA88851D7ACE11C5A391A20 /* DashboardViewModelTests.swift */; };
+		2B43F77E1920F17F1BC51C5C /* OSStateVectorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EA6ADD0907622E327B9C74 /* OSStateVectorResponse.swift */; };
+		2BC5C3F02623022E22464961 /* ASFlightResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F883B0FEA6BB38B07C35AB /* ASFlightResponse.swift */; };
+		2C3F4459C636E1CE0B3BD626 /* Airline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650B00CC9FBACEF87EFE6A80 /* Airline.swift */; };
+		30B348914B1384616D70BCA8 /* FavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B91AE7DDF532472E8329CF /* FavoritesViewModel.swift */; };
+		30E7A1F3D9A9A7545345A28F /* RxTest in Frameworks */ = {isa = PBXBuildFile; productRef = E3E8C4F5C7D14B37EFB8568F /* RxTest */; };
+		314DA3D8BC71CD3FB0677B28 /* RealmFavorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BF7AA4428C7F3EE73622AD /* RealmFavorite.swift */; };
+		340AFE0D87865AD1BFE28876 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AFFCD5FC3F589249AFBD4BD /* Assets.xcassets */; };
+		3555AFB3B1C01B63AAC636D2 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F88713998248BF094AD82C6 /* SettingsViewModel.swift */; };
+		36C51AAE48FBF73FB96354AE /* FavoritesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561E74DA032ADDC53D39B854 /* FavoritesViewModelTests.swift */; };
+		384108171A8B7FD19358FF9F /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F67A8ECDB47C4A57CDEE6F /* KeychainService.swift */; };
+		398792A44AF601644319F5D9 /* SearchFlightsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34AE1E389D803CBCF904C2D /* SearchFlightsUseCase.swift */; };
+		3ADE08835DBB7B5CE3B9361D /* StatusBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2526F85B45B942EE6F131BFC /* StatusBadgeView.swift */; };
+		3C20A589351EA61305955D4E /* RxFlow in Frameworks */ = {isa = PBXBuildFile; productRef = FAC50E7E0F18127ED826C66F /* RxFlow */; };
+		3E54DEA0AD0ABFB2DFB8C407 /* FlightStatusSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FD72AEE6D7C5F5C5FA3503 /* FlightStatusSection.swift */; };
+		3E97261E25BB197C1EAE4F2D /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB9FC7E1C503AAD17936ECC /* Configurable.swift */; };
+		3FC55C2CC9591F276DE857CF /* ASAirportResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19038C420C359DBFDA4442AB /* ASAirportResponse.swift */; };
+		43241D973A07265D3A8FF891 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AC1D0088DA52EF372BE816 /* DashboardViewModel.swift */; };
+		45EFA752BDE69F1F46623481 /* String+Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081D5C0F3C649FA752B88D07 /* String+Validation.swift */; };
+		463E11A579CF0D2D720FEC4E /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3319E0D08322A497339221C0 /* LoadingView.swift */; };
+		49954B25C3C4CC82EE1F50D1 /* OpenSkyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200E8078D819708076CF1DF9 /* OpenSkyAPI.swift */; };
+		4F6D04C396988451DB2A6105 /* TrackFlightUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494F238544CA0792825030C9 /* TrackFlightUseCase.swift */; };
+		52706A52B00181A7A54988D7 /* NetworkServiceAsync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415C4E5B7DA1BA6B72E83882 /* NetworkServiceAsync.swift */; };
+		549B1B2B61C1A046195F9809 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2B94AAD5AF8DBC391B7E69 /* NetworkError.swift */; };
+		5675FDF4E8F8F1C6B937ECAA /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE51E53B0BFCDB765A424B89 /* DIContainer.swift */; };
+		568D0D1961A2FBE3B6B06AF9 /* UIViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF899A8653D6F364A4D31AE /* UIViewController+Rx.swift */; };
+		5AB7A68CC9F24EF483F110B8 /* TestSchedulerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA100B7526A049F0762F458 /* TestSchedulerExtensions.swift */; };
+		5AEFF05A843CD79F1411457C /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 947C11FA2CC8C6BB62818196 /* RxBlocking */; };
+		5C60AE0C434B6980C90F2AAF /* AirportRealmMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0600306F61771BA06FCB35F0 /* AirportRealmMapper.swift */; };
+		5D863F8386878D7C9536B797 /* FlightDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913710CD5FA321831BAA7412 /* FlightDetailViewModel.swift */; };
+		5E053439234098CAC2CFE7EE /* FetchAirportBoardUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2259E1D35A3D5CDD0665D1 /* FetchAirportBoardUseCase.swift */; };
+		5E10495649B825A900A60E99 /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA7227EA20C89CDA29A03CB /* APIEndpoint.swift */; };
+		6172E83C6F218229AD301F5A /* AppFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1272DAE39BFF97891CA80F45 /* AppFlow.swift */; };
+		61F6C66FEC5B884DA21D998F /* UIColor+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306E627CDEA102EF60EEC854 /* UIColor+Theme.swift */; };
+		6935708028929960EA2DE58D /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 127BEE17D5DFA6A583F65238 /* RxRelay */; };
+		69E73DEFCA715D901DDDD758 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610BAF174C5969E8DC70DA03 /* SplashViewModel.swift */; };
+		6B08CF7ECC503C362C5A83A4 /* SearchQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00EFB47E6537EE1B5786CDC /* SearchQuery.swift */; };
+		6D2EDE1A78C8A2E0D3021099 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6C151EC201B213179EA1D9 /* MapViewController.swift */; };
+		6D305DB03CA1EA01703803F8 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E22E36AE9682748E6B50FAA /* HTTPMethod.swift */; };
+		6F266216CA5A49C5272F80F2 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CCB15F0ACCF2DCF6805F1B /* LocationService.swift */; };
+		6F26EDD60C94368941A99B20 /* DashboardPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF857277D4ABBAC8FFDC475D /* DashboardPage.swift */; };
+		6FE09DD44B9B9DA99A86C0B8 /* FlightSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE38A46B0D8422E5975B952 /* FlightSearchViewModel.swift */; };
+		71545A4E78FB705E3FE2A8A4 /* mock_positions.json in Resources */ = {isa = PBXBuildFile; fileRef = AF657AD8251E1AC28C344376 /* mock_positions.json */; };
+		759C106E966E7417C73268FF /* SettingsStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58ECDFAE3880BDBF232F20A /* SettingsStep.swift */; };
+		76DFED4557CDE83EAA730985 /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3461C035274ACB4B833DC1 /* Flight.swift */; };
+		782AC16B9B8E01C07431FAE4 /* SearchHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8069C3139DBFC8C50391817A /* SearchHistoryCell.swift */; };
+		78C03DBAB90C1D8AF038E230 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC9E93842D12F7B05F1D849 /* NetworkService.swift */; };
+		79E78AEB9DC8F77D5332BDBC /* OpenSkyEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05111BBB586282140057A1CB /* OpenSkyEndpoints.swift */; };
+		7AAD30732E9487611BBD722B /* SettingsOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829015AF90F5A0A3CA2B2F22 /* SettingsOptionCell.swift */; };
+		7CC3D3097559D61C9AAD991F /* AirportBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78F7343533E371EF633A565 /* AirportBoardView.swift */; };
+		80F0BAA9BC325FB90E00F402 /* RealmFlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516497B38D017123705A6680 /* RealmFlight.swift */; };
+		8326C033D218E80285528D86 /* Observable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AB02BD4F643A12981E78E5 /* Observable+Extensions.swift */; };
+		860BBB755183303BAA3530C7 /* FlightDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D501E3A3C72017092C9946A0 /* FlightDetailViewController.swift */; };
+		86F30CC411461FB8AC4344C7 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84540C7CD7DCDC2B8E33D12B /* NotificationService.swift */; };
+		8A2660BB525C4BC28FF548BF /* MockReachabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E195C2E7A3A1882D910A5527 /* MockReachabilityService.swift */; };
+		8BFAEC412872932389EE6B89 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E701D827FCB8A84B6DD00A3 /* RealmManager.swift */; };
+		8CDA00641C8FC71306124DD0 /* RealmSearchHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFD46E9A4BCF24B1840B04B /* RealmSearchHistory.swift */; };
+		8CFB217212963382FF471188 /* AirportRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED7BFCD3511F70CED8F109C /* AirportRepositoryProtocol.swift */; };
+		8D4B9184EBC4028323518473 /* FlightRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C23CE848010E1176D0A194A /* FlightRepository.swift */; };
+		8FDE8BBDFE4E51DA4204599A /* SearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27FB5FE750079FE3A48293FC /* SearchUITests.swift */; };
+		908F83DE8244F7876FE3550D /* MainStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F51CB34686DB39DC43ADE2 /* MainStep.swift */; };
+		93DCD97D9DE549D0D73E74EA /* AviationStackEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBF72664A4E3657C34F9E42 /* AviationStackEndpoints.swift */; };
+		96AACA0DD9643CE95AB741DD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D3EF8639E407BF9663C96E /* Constants.swift */; };
+		99450DFC2191138C6B1C1BF8 /* AviationStackAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996BBEDD3C990F56792A2FB8 /* AviationStackAPI.swift */; };
+		9A42464C1EA860E0EF053188 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6D1DE58FD91CF6547768ED /* BaseTableViewCell.swift */; };
+		9CEE5C5AF784A302284B965A /* FetchFlightsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28363ABCC13354E60E56AABF /* FetchFlightsUseCase.swift */; };
+		9E7D13CB9479E0AF3CE03FB9 /* FlightStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8815F3BFFA5289035410C53B /* FlightStatus.swift */; };
+		9F21E45CA9AAEA67480350A3 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767182229E9BAEAC96258A38 /* Logger.swift */; };
+		A223314A57D9EC537E0F090F /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 2571FD0F49E5421DDCBC88A6 /* RxCocoa */; };
+		A706FAD1180DA98ED22C47DD /* FlightCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA73CA6C8C5540C0EFD4A9A7 /* FlightCardView.swift */; };
+		A72277BC4384C3F9EC7D75B9 /* FlightRouteSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A40845987C32D14792201D /* FlightRouteSection.swift */; };
+		AA78395127ACB69E4D6A65F2 /* FlightRealmMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E22DA2D05259A6435CC419 /* FlightRealmMapper.swift */; };
+		ABC2DF40388494CBFAA2C0EF /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FC161BF593438078D94A16 /* MapViewModel.swift */; };
+		B0D3DA8593C35C84AA4BA388 /* FlightModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17ED5E1A9A469941B488F4A0 /* FlightModelTests.swift */; };
+		B17888A6E86284D3C60DEA6E /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EC8208CD48B78D2CD853BC0A /* RealmSwift */; };
+		B2111EE1F2D50CB70686583E /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76A34D8B65FC06ED21FA524 /* Typealiases.swift */; };
+		B993DB8FEC5E45E714197341 /* ActiveFlightCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3225AFD2C82A7E76B13EDC07 /* ActiveFlightCell.swift */; };
+		B9A3031A0455D11D0FBCE024 /* mock_flights.json in Resources */ = {isa = PBXBuildFile; fileRef = 74C57AA060D6E0F3CB561432 /* mock_flights.json */; };
+		BA00BAE44922F96B5AFAB3E3 /* ManageFavoritesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81143D346A2E19AE0733C11C /* ManageFavoritesUseCase.swift */; };
+		BBF00D8DA8E3A6DBA30312E6 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD23819D1CF54EBCAEE9B396 /* SettingsViewController.swift */; };
+		BD9DE00561D8AFF92BE2EDA5 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290B01D248D4CCB5F87C2FA5 /* DashboardViewController.swift */; };
+		BDB3BA1653D1B4F53AB64645 /* FlightRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227439E9829F69C6DC737A43 /* FlightRepositoryTests.swift */; };
+		BDD98E43E639E8503D699DDF /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389BED70BDA298D39140D03B /* BaseViewController.swift */; };
+		BE8D2CA93107C2ED0A665C07 /* FlightDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F988D7DB7F568E959436F47 /* FlightDetailViewModelTests.swift */; };
+		C06DBDE494AE109C3C8F61D0 /* KeychainServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0898F9B2786FA236A630224F /* KeychainServiceTests.swift */; };
+		C27AA8EB7B62DBEF66BE3AFF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19279AAC9BB403DD51FF974 /* SceneDelegate.swift */; };
+		CB30F0E40AE7F64D1C96A9DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641DEEAF0D50084CE5AD64A9 /* AppDelegate.swift */; };
+		CB6EE852A53A76890261C945 /* FavoritesRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F5162890A349C1E763BC10 /* FavoritesRepositoryTests.swift */; };
+		D568E5924B2D017C66F19B41 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D384ABE8B949BF96C28ADC40 /* RxSwift */; };
+		D7515B8C7994A03DF5249851 /* FlightSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC3BCD4E1303351E0C1A61A /* FlightSearchViewController.swift */; };
+		D777CC99223BF839CE38F02A /* MockFavoritesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B48C237F5AECCB97ACBB34B /* MockFavoritesRepository.swift */; };
+		D82D6A611C0220782664A2EE /* FavoritesRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607A613FE841E59225D5C31E /* FavoritesRepositoryProtocol.swift */; };
+		D8E057A38CCB431B107B38EF /* MockNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74994199DCFCF33A7AA4213 /* MockNetworkService.swift */; };
+		DA605F1A64AD0DF08D7E7828 /* FlightResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D328E1B707858C5116CA2B6D /* FlightResultCell.swift */; };
+		DEE8396F149D851A1DAE8242 /* ReachabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC70E9D5D5B66410EBF3246 /* ReachabilityService.swift */; };
+		E02897DA8A984A916BB18AE0 /* DashboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5230A96AE4F933853D739208 /* DashboardUITests.swift */; };
+		E274E12DE8F18F254BFB8935 /* AirportBoardViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CB6AFDEC3527B8B276442D /* AirportBoardViewModelTests.swift */; };
+		EAD99FAD118F8407E7A4DBDF /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D6D76620A0FA5DD750EEC1 /* ViewModelType.swift */; };
+		EB0231CF6DE1AE8F71AD53BA /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EB6AE44CD263A64C7B7047 /* TestData.swift */; };
+		EBE22F169C3B5DB0E867625E /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889239E4BB2BF615FDDB52FC /* SplashViewController.swift */; };
+		ED4EB315D85D07530A003CDB /* AirportBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F06372CDCC0F06305448942 /* AirportBoardViewController.swift */; };
+		F5F5E8602E44D0F0E0B75B87 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9659210E48DD1BC616F8C27E /* FavoritesViewController.swift */; };
+		F7FE9D2D1F5BF4255A859835 /* DateFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAE0734E4797588257137BB /* DateFormatters.swift */; };
+		F862ED9721179F06F7DCD8EA /* mock_airports.json in Resources */ = {isa = PBXBuildFile; fileRef = 852775C838556251207C1E77 /* mock_airports.json */; };
+		F981F88ACDD5DB9069396366 /* FlightSearchViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172BB75B65DADE7988F5B751 /* FlightSearchViewModelTests.swift */; };
+		FD3CA41E7E130C1DC86EEB92 /* MainFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38ED6E1F43FB97C22851380 /* MainFlow.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		10CCBC0347F2665CC0F7CE4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68C3CB21BBC165DD97B253BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C29FFF61355B022C1CA72B83;
+			remoteInfo = SkyPulse;
+		};
+		2245FE352BA15F1CB9A7E93C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 68C3CB21BBC165DD97B253BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C29FFF61355B022C1CA72B83;
+			remoteInfo = SkyPulse;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04FDBA0EC556B26D1E46923A /* SkyPulse.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = SkyPulse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		05111BBB586282140057A1CB /* OpenSkyEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSkyEndpoints.swift; sourceTree = "<group>"; };
+		0600306F61771BA06FCB35F0 /* AirportRealmMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportRealmMapper.swift; sourceTree = "<group>"; };
+		0693B6AA18BCB976EAAD64F7 /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		07D6D76620A0FA5DD750EEC1 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
+		081D5C0F3C649FA752B88D07 /* String+Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Validation.swift"; sourceTree = "<group>"; };
+		0898F9B2786FA236A630224F /* KeychainServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainServiceTests.swift; sourceTree = "<group>"; };
+		0A6C151EC201B213179EA1D9 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		0F88713998248BF094AD82C6 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		0F988D7DB7F568E959436F47 /* FlightDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetailViewModelTests.swift; sourceTree = "<group>"; };
+		1272DAE39BFF97891CA80F45 /* AppFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlow.swift; sourceTree = "<group>"; };
+		1551B9BF66A901268D90EDDB /* Date+Formatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Formatting.swift"; sourceTree = "<group>"; };
+		15FC161BF593438078D94A16 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		172BB75B65DADE7988F5B751 /* FlightSearchViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSearchViewModelTests.swift; sourceTree = "<group>"; };
+		17ED5E1A9A469941B488F4A0 /* FlightModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightModelTests.swift; sourceTree = "<group>"; };
+		19038C420C359DBFDA4442AB /* ASAirportResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASAirportResponse.swift; sourceTree = "<group>"; };
+		1E22E36AE9682748E6B50FAA /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		200E8078D819708076CF1DF9 /* OpenSkyAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSkyAPI.swift; sourceTree = "<group>"; };
+		2201988E9A4B74562D0C264A /* FlightInfoSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightInfoSection.swift; sourceTree = "<group>"; };
+		227439E9829F69C6DC737A43 /* FlightRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightRepositoryTests.swift; sourceTree = "<group>"; };
+		2526F85B45B942EE6F131BFC /* StatusBadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBadgeView.swift; sourceTree = "<group>"; };
+		253150E4589D18978F3DF48C /* FavoritesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesRepository.swift; sourceTree = "<group>"; };
+		27FB5FE750079FE3A48293FC /* SearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUITests.swift; sourceTree = "<group>"; };
+		28363ABCC13354E60E56AABF /* FetchFlightsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchFlightsUseCase.swift; sourceTree = "<group>"; };
+		290B01D248D4CCB5F87C2FA5 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		29D3EF8639E407BF9663C96E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2AE38A46B0D8422E5975B952 /* FlightSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSearchViewModel.swift; sourceTree = "<group>"; };
+		2BAE0734E4797588257137BB /* DateFormatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatters.swift; sourceTree = "<group>"; };
+		2BC70E9D5D5B66410EBF3246 /* ReachabilityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityService.swift; sourceTree = "<group>"; };
+		2DF899A8653D6F364A4D31AE /* UIViewController+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Rx.swift"; sourceTree = "<group>"; };
+		2ED7BFCD3511F70CED8F109C /* AirportRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportRepositoryProtocol.swift; sourceTree = "<group>"; };
+		306E627CDEA102EF60EEC854 /* UIColor+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Theme.swift"; sourceTree = "<group>"; };
+		3225AFD2C82A7E76B13EDC07 /* ActiveFlightCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveFlightCell.swift; sourceTree = "<group>"; };
+		3319E0D08322A497339221C0 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		389BED70BDA298D39140D03B /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		3AFFCD5FC3F589249AFBD4BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3CDC9ADA1C6AA49891E2D6D4 /* MockFlightRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFlightRepository.swift; sourceTree = "<group>"; };
+		40BF7AA4428C7F3EE73622AD /* RealmFavorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmFavorite.swift; sourceTree = "<group>"; };
+		40EB6AE44CD263A64C7B7047 /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
+		415C4E5B7DA1BA6B72E83882 /* NetworkServiceAsync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceAsync.swift; sourceTree = "<group>"; };
+		4401D9CB76D8894405A42076 /* FlightRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightRepositoryProtocol.swift; sourceTree = "<group>"; };
+		45AB02BD4F643A12981E78E5 /* Observable+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+Extensions.swift"; sourceTree = "<group>"; };
+		46A682CEC696FD79CCA59DAC /* AirportBoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportBoardViewModel.swift; sourceTree = "<group>"; };
+		494F238544CA0792825030C9 /* TrackFlightUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackFlightUseCase.swift; sourceTree = "<group>"; };
+		4C23CE848010E1176D0A194A /* FlightRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightRepository.swift; sourceTree = "<group>"; };
+		4E20F1DEC21C3D2AB4B7D3C6 /* SearchPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPage.swift; sourceTree = "<group>"; };
+		50970467DB4B567BD7C31D20 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		516497B38D017123705A6680 /* RealmFlight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmFlight.swift; sourceTree = "<group>"; };
+		5230A96AE4F933853D739208 /* DashboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardUITests.swift; sourceTree = "<group>"; };
+		52A596E73185706316BB0522 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		561E74DA032ADDC53D39B854 /* FavoritesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewModelTests.swift; sourceTree = "<group>"; };
+		5C3461C035274ACB4B833DC1 /* Flight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
+		5CC3BCD4E1303351E0C1A61A /* FlightSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSearchViewController.swift; sourceTree = "<group>"; };
+		5F06372CDCC0F06305448942 /* AirportBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportBoardViewController.swift; sourceTree = "<group>"; };
+		607A613FE841E59225D5C31E /* FavoritesRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesRepositoryProtocol.swift; sourceTree = "<group>"; };
+		610BAF174C5969E8DC70DA03 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		62EA6ADD0907622E327B9C74 /* OSStateVectorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSStateVectorResponse.swift; sourceTree = "<group>"; };
+		641DEEAF0D50084CE5AD64A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		650B00CC9FBACEF87EFE6A80 /* Airline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airline.swift; sourceTree = "<group>"; };
+		66CCB15F0ACCF2DCF6805F1B /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		6B1D0BB539D141D56D71A21F /* FavoriteFlightCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteFlightCell.swift; sourceTree = "<group>"; };
+		6B48C237F5AECCB97ACBB34B /* MockFavoritesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFavoritesRepository.swift; sourceTree = "<group>"; };
+		6DA7227EA20C89CDA29A03CB /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
+		6FA88851D7ACE11C5A391A20 /* DashboardViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModelTests.swift; sourceTree = "<group>"; };
+		70AC1D0088DA52EF372BE816 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		72050B691091B4ED63C4D879 /* SearchStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchStep.swift; sourceTree = "<group>"; };
+		74C57AA060D6E0F3CB561432 /* mock_flights.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = mock_flights.json; sourceTree = "<group>"; };
+		74CB6AFDEC3527B8B276442D /* AirportBoardViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportBoardViewModelTests.swift; sourceTree = "<group>"; };
+		767182229E9BAEAC96258A38 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		7A97AE4B1C25EA7F0F024518 /* RealmAirport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmAirport.swift; sourceTree = "<group>"; };
+		7E701D827FCB8A84B6DD00A3 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		8069C3139DBFC8C50391817A /* SearchHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHistoryCell.swift; sourceTree = "<group>"; };
+		81143D346A2E19AE0733C11C /* ManageFavoritesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageFavoritesUseCase.swift; sourceTree = "<group>"; };
+		829015AF90F5A0A3CA2B2F22 /* SettingsOptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOptionCell.swift; sourceTree = "<group>"; };
+		84540C7CD7DCDC2B8E33D12B /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		852775C838556251207C1E77 /* mock_airports.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = mock_airports.json; sourceTree = "<group>"; };
+		87B91AE7DDF532472E8329CF /* FavoritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewModel.swift; sourceTree = "<group>"; };
+		8815F3BFFA5289035410C53B /* FlightStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightStatus.swift; sourceTree = "<group>"; };
+		889239E4BB2BF615FDDB52FC /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		8FA100B7526A049F0762F458 /* TestSchedulerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSchedulerExtensions.swift; sourceTree = "<group>"; };
+		913710CD5FA321831BAA7412 /* FlightDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetailViewModel.swift; sourceTree = "<group>"; };
+		92F5162890A349C1E763BC10 /* FavoritesRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesRepositoryTests.swift; sourceTree = "<group>"; };
+		9659210E48DD1BC616F8C27E /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		98C53E64AB2D1D4C49059B1A /* Airport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airport.swift; sourceTree = "<group>"; };
+		996BBEDD3C990F56792A2FB8 /* AviationStackAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AviationStackAPI.swift; sourceTree = "<group>"; };
+		9F3A9340CC5B6D37E4D78406 /* UIFont+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Theme.swift"; sourceTree = "<group>"; };
+		A169998498AEC6E52B541806 /* FlightPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightPosition.swift; sourceTree = "<group>"; };
+		A19279AAC9BB403DD51FF974 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A2A40845987C32D14792201D /* FlightRouteSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightRouteSection.swift; sourceTree = "<group>"; };
+		A2FD72AEE6D7C5F5C5FA3503 /* FlightStatusSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightStatusSection.swift; sourceTree = "<group>"; };
+		A354D186ACDAF6E62F6B29EA /* XCUIApplicationLaunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCUIApplicationLaunch.swift; sourceTree = "<group>"; };
+		A3F67A8ECDB47C4A57CDEE6F /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		A76A34D8B65FC06ED21FA524 /* Typealiases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealiases.swift; sourceTree = "<group>"; };
+		A99AC35BEC4441053205D745 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		A9FB4689FCF0C3C919C65B04 /* FlightMonitorServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightMonitorServiceTests.swift; sourceTree = "<group>"; };
+		AAFD46E9A4BCF24B1840B04B /* RealmSearchHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmSearchHistory.swift; sourceTree = "<group>"; };
+		ABC9E93842D12F7B05F1D849 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		AF657AD8251E1AC28C344376 /* mock_positions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = mock_positions.json; sourceTree = "<group>"; };
+		AF857277D4ABBAC8FFDC475D /* DashboardPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardPage.swift; sourceTree = "<group>"; };
+		B00EFB47E6537EE1B5786CDC /* SearchQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchQuery.swift; sourceTree = "<group>"; };
+		B6E22DA2D05259A6435CC419 /* FlightRealmMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightRealmMapper.swift; sourceTree = "<group>"; };
+		B74994199DCFCF33A7AA4213 /* MockNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkService.swift; sourceTree = "<group>"; };
+		B78F7343533E371EF633A565 /* AirportBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportBoardView.swift; sourceTree = "<group>"; };
+		BD23819D1CF54EBCAEE9B396 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		BDA6C3B197338F2C908E4818 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BE2B94AAD5AF8DBC391B7E69 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		C38ED6E1F43FB97C22851380 /* MainFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlow.swift; sourceTree = "<group>"; };
+		C58ECDFAE3880BDBF232F20A /* SettingsStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStep.swift; sourceTree = "<group>"; };
+		C76930AEB457AE996F218613 /* FlightMonitorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightMonitorService.swift; sourceTree = "<group>"; };
+		CDBF72664A4E3657C34F9E42 /* AviationStackEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AviationStackEndpoints.swift; sourceTree = "<group>"; };
+		CE51E53B0BFCDB765A424B89 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		CE6D1DE58FD91CF6547768ED /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		D328E1B707858C5116CA2B6D /* FlightResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightResultCell.swift; sourceTree = "<group>"; };
+		D501E3A3C72017092C9946A0 /* FlightDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightDetailViewController.swift; sourceTree = "<group>"; };
+		DAEAE7E0B1B80DBAD7CD270C /* AirportRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportRepository.swift; sourceTree = "<group>"; };
+		DC2259E1D35A3D5CDD0665D1 /* FetchAirportBoardUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchAirportBoardUseCase.swift; sourceTree = "<group>"; };
+		E195C2E7A3A1882D910A5527 /* MockReachabilityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockReachabilityService.swift; sourceTree = "<group>"; };
+		E34AE1E389D803CBCF904C2D /* SearchFlightsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFlightsUseCase.swift; sourceTree = "<group>"; };
+		E5F51CB34686DB39DC43ADE2 /* MainStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainStep.swift; sourceTree = "<group>"; };
+		E8C4974B232759A8848B17BC /* MockKeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockKeychainService.swift; sourceTree = "<group>"; };
+		EA73CA6C8C5540C0EFD4A9A7 /* FlightCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightCardView.swift; sourceTree = "<group>"; };
+		EF29F05146AEACA97096A89B /* SkyPulseUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = SkyPulseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F18816F960CA7E36D97704E7 /* UIView+Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Animations.swift"; sourceTree = "<group>"; };
+		F5F883B0FEA6BB38B07C35AB /* ASFlightResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASFlightResponse.swift; sourceTree = "<group>"; };
+		F6C1938DDCCAFCA3C0072D71 /* SkyPulseTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = SkyPulseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9745F3BE1A72704BF56B61F /* AppStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStep.swift; sourceTree = "<group>"; };
+		FA1C0DE183B731041806D025 /* MockDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataProvider.swift; sourceTree = "<group>"; };
+		FEB9FC7E1C503AAD17936ECC /* Configurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurable.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C16157E19D81C5DE0E5BF42D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D568E5924B2D017C66F19B41 /* RxSwift in Frameworks */,
+				A223314A57D9EC537E0F090F /* RxCocoa in Frameworks */,
+				6935708028929960EA2DE58D /* RxRelay in Frameworks */,
+				3C20A589351EA61305955D4E /* RxFlow in Frameworks */,
+				B17888A6E86284D3C60DEA6E /* RealmSwift in Frameworks */,
+				01CAD9BBBFD4035621B06ECE /* SnapKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFDBC4A8A02DAA8F03789CE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30E7A1F3D9A9A7545345A28F /* RxTest in Frameworks */,
+				5AEFF05A843CD79F1411457C /* RxBlocking in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		015D92B4C70DC5D45EBBB06A /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				AF857277D4ABBAC8FFDC475D /* DashboardPage.swift */,
+				4E20F1DEC21C3D2AB4B7D3C6 /* SearchPage.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		09ADD16FEE91E0D92416DE10 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				92F5162890A349C1E763BC10 /* FavoritesRepositoryTests.swift */,
+				227439E9829F69C6DC737A43 /* FlightRepositoryTests.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		0D7E837FF25C0D268A93DBAA /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				42A4B3428E3A99ABDCBCBBAB /* Common */,
+				94075244BE7877FFE848471B /* Navigation */,
+				4AB50DC83FFCE5336570B431 /* Scenes */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		103F4BC7B7EBEA258B46E4A5 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				0693B6AA18BCB976EAAD64F7 /* AppConfiguration.swift */,
+				641DEEAF0D50084CE5AD64A9 /* AppDelegate.swift */,
+				CE51E53B0BFCDB765A424B89 /* DIContainer.swift */,
+				A19279AAC9BB403DD51FF974 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		14972E1F9305F80318145386 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				DC2259E1D35A3D5CDD0665D1 /* FetchAirportBoardUseCase.swift */,
+				28363ABCC13354E60E56AABF /* FetchFlightsUseCase.swift */,
+				81143D346A2E19AE0733C11C /* ManageFavoritesUseCase.swift */,
+				E34AE1E389D803CBCF904C2D /* SearchFlightsUseCase.swift */,
+				494F238544CA0792825030C9 /* TrackFlightUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		193C639C5BC31C4D5C039673 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				389BED70BDA298D39140D03B /* BaseViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1E2159A64480DF79CA7E46DF /* FlightDetail */ = {
+			isa = PBXGroup;
+			children = (
+				D501E3A3C72017092C9946A0 /* FlightDetailViewController.swift */,
+				913710CD5FA321831BAA7412 /* FlightDetailViewModel.swift */,
+				6B033B1B35D38248535F967C /* Sections */,
+			);
+			path = FlightDetail;
+			sourceTree = "<group>";
+		};
+		22B87AA87F8D0F8999C4D7F3 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				DAEAE7E0B1B80DBAD7CD270C /* AirportRepository.swift */,
+				253150E4589D18978F3DF48C /* FavoritesRepository.swift */,
+				4C23CE848010E1176D0A194A /* FlightRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		24F0A3ECC0C30FA04C26D573 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		2C4F53E4C91811E8AFB7B920 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3225AFD2C82A7E76B13EDC07 /* ActiveFlightCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		2DADB7B5415B073AADF12378 /* SkyPulse */ = {
+			isa = PBXGroup;
+			children = (
+				103F4BC7B7EBEA258B46E4A5 /* Application */,
+				7CDB7C38C73E540E329A60D1 /* Data */,
+				6DC730E2B43D0F49FFC7DE50 /* Domain */,
+				458AE35A48853445EADF6F7C /* Extensions */,
+				0D7E837FF25C0D268A93DBAA /* Presentation */,
+				3C5CFF8750450B6AB7BC4DA4 /* Resources */,
+				689812C88C6BD8C22E5924A3 /* Services */,
+				5A0F2821CC725D6F0725058B /* Utilities */,
+			);
+			path = SkyPulse;
+			sourceTree = "<group>";
+		};
+		3174AEB50D5C57353C9CF66E /* OpenSky */ = {
+			isa = PBXGroup;
+			children = (
+				200E8078D819708076CF1DF9 /* OpenSkyAPI.swift */,
+				05111BBB586282140057A1CB /* OpenSkyEndpoints.swift */,
+				3BDBEB5BD54337BCD3B42EA0 /* DTOs */,
+			);
+			path = OpenSky;
+			sourceTree = "<group>";
+		};
+		3182FC1A6AA612F8AE87A508 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A354D186ACDAF6E62F6B29EA /* XCUIApplicationLaunch.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		375BC589457061A7E0A12879 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B78F7343533E371EF633A565 /* AirportBoardView.swift */,
+				A99AC35BEC4441053205D745 /* EmptyStateView.swift */,
+				EA73CA6C8C5540C0EFD4A9A7 /* FlightCardView.swift */,
+				3319E0D08322A497339221C0 /* LoadingView.swift */,
+				2526F85B45B942EE6F131BFC /* StatusBadgeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3A099091BA02FD2504C67C2A /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+				19038C420C359DBFDA4442AB /* ASAirportResponse.swift */,
+				F5F883B0FEA6BB38B07C35AB /* ASFlightResponse.swift */,
+			);
+			path = DTOs;
+			sourceTree = "<group>";
+		};
+		3AB4B72483B00E9AACCE76A1 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				FA1C0DE183B731041806D025 /* MockDataProvider.swift */,
+				96F015CBC179089B13B655D3 /* JSON */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		3BDBEB5BD54337BCD3B42EA0 /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+				62EA6ADD0907622E327B9C74 /* OSStateVectorResponse.swift */,
+			);
+			path = DTOs;
+			sourceTree = "<group>";
+		};
+		3C5CFF8750450B6AB7BC4DA4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3AFFCD5FC3F589249AFBD4BD /* Assets.xcassets */,
+				52A596E73185706316BB0522 /* Info.plist */,
+				BDA6C3B197338F2C908E4818 /* LaunchScreen.storyboard */,
+				50970467DB4B567BD7C31D20 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3F83BF6AAAED73069B377FA8 /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				0600306F61771BA06FCB35F0 /* AirportRealmMapper.swift */,
+				B6E22DA2D05259A6435CC419 /* FlightRealmMapper.swift */,
+			);
+			path = Mappers;
+			sourceTree = "<group>";
+		};
+		42A4B3428E3A99ABDCBCBBAB /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				9CC01FABD964FCF559475020 /* Cells */,
+				193C639C5BC31C4D5C039673 /* Controllers */,
+				64CC20CA6CB5F343F1220660 /* Protocols */,
+				375BC589457061A7E0A12879 /* Views */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		42D7338F78C14CF896A36DB1 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				889239E4BB2BF615FDDB52FC /* SplashViewController.swift */,
+				610BAF174C5969E8DC70DA03 /* SplashViewModel.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		458AE35A48853445EADF6F7C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1551B9BF66A901268D90EDDB /* Date+Formatting.swift */,
+				45AB02BD4F643A12981E78E5 /* Observable+Extensions.swift */,
+				081D5C0F3C649FA752B88D07 /* String+Validation.swift */,
+				306E627CDEA102EF60EEC854 /* UIColor+Theme.swift */,
+				9F3A9340CC5B6D37E4D78406 /* UIFont+Theme.swift */,
+				F18816F960CA7E36D97704E7 /* UIView+Animations.swift */,
+				2DF899A8653D6F364A4D31AE /* UIViewController+Rx.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		482768B0FC9DD7F3210F87C8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				74CB6AFDEC3527B8B276442D /* AirportBoardViewModelTests.swift */,
+				6FA88851D7ACE11C5A391A20 /* DashboardViewModelTests.swift */,
+				561E74DA032ADDC53D39B854 /* FavoritesViewModelTests.swift */,
+				0F988D7DB7F568E959436F47 /* FlightDetailViewModelTests.swift */,
+				172BB75B65DADE7988F5B751 /* FlightSearchViewModelTests.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4A16E6294E4FBA9FD31F787C /* AirportBoard */ = {
+			isa = PBXGroup;
+			children = (
+				5F06372CDCC0F06305448942 /* AirportBoardViewController.swift */,
+				46A682CEC696FD79CCA59DAC /* AirportBoardViewModel.swift */,
+				24F0A3ECC0C30FA04C26D573 /* Cells */,
+			);
+			path = AirportBoard;
+			sourceTree = "<group>";
+		};
+		4AB50DC83FFCE5336570B431 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				4A16E6294E4FBA9FD31F787C /* AirportBoard */,
+				9B9EAE2395864C121892E388 /* Dashboard */,
+				B7ACF3BEE42316203D964E4C /* Favorites */,
+				1E2159A64480DF79CA7E46DF /* FlightDetail */,
+				C54D6AB10B67907285578C0C /* FlightSearch */,
+				D13AF01C62226EBB89FDD8BD /* Map */,
+				AEB908EDCEFD2DF991593F52 /* Settings */,
+				42D7338F78C14CF896A36DB1 /* Splash */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		5A0F2821CC725D6F0725058B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				29D3EF8639E407BF9663C96E /* Constants.swift */,
+				2BAE0734E4797588257137BB /* DateFormatters.swift */,
+				767182229E9BAEAC96258A38 /* Logger.swift */,
+				A76A34D8B65FC06ED21FA524 /* Typealiases.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		5DA4C19AB060ACFC6A49FE7D /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				7E701D827FCB8A84B6DD00A3 /* RealmManager.swift */,
+				3F83BF6AAAED73069B377FA8 /* Mappers */,
+				6E23118DF310104092CD5A90 /* Models */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		60C9F413057DEA4ADCA53974 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A9FB4689FCF0C3C919C65B04 /* FlightMonitorServiceTests.swift */,
+				0898F9B2786FA236A630224F /* KeychainServiceTests.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		64CC20CA6CB5F343F1220660 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				FEB9FC7E1C503AAD17936ECC /* Configurable.swift */,
+				07D6D76620A0FA5DD750EEC1 /* ViewModelType.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		65E7B2FE8335D22846DE9F92 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04FDBA0EC556B26D1E46923A /* SkyPulse.app */,
+				F6C1938DDCCAFCA3C0072D71 /* SkyPulseTests.xctest */,
+				EF29F05146AEACA97096A89B /* SkyPulseUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		689812C88C6BD8C22E5924A3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C76930AEB457AE996F218613 /* FlightMonitorService.swift */,
+				A3F67A8ECDB47C4A57CDEE6F /* KeychainService.swift */,
+				66CCB15F0ACCF2DCF6805F1B /* LocationService.swift */,
+				84540C7CD7DCDC2B8E33D12B /* NotificationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		6B033B1B35D38248535F967C /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				2201988E9A4B74562D0C264A /* FlightInfoSection.swift */,
+				A2A40845987C32D14792201D /* FlightRouteSection.swift */,
+				A2FD72AEE6D7C5F5C5FA3503 /* FlightStatusSection.swift */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		6C4D6CE91888B7305F4F049B /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				2ED7BFCD3511F70CED8F109C /* AirportRepositoryProtocol.swift */,
+				607A613FE841E59225D5C31E /* FavoritesRepositoryProtocol.swift */,
+				4401D9CB76D8894405A42076 /* FlightRepositoryProtocol.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		6DC730E2B43D0F49FFC7DE50 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				861BC4649D550ECE9968421D /* Models */,
+				6C4D6CE91888B7305F4F049B /* Repositories */,
+				14972E1F9305F80318145386 /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		6E23118DF310104092CD5A90 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7A97AE4B1C25EA7F0F024518 /* RealmAirport.swift */,
+				40BF7AA4428C7F3EE73622AD /* RealmFavorite.swift */,
+				516497B38D017123705A6680 /* RealmFlight.swift */,
+				AAFD46E9A4BCF24B1840B04B /* RealmSearchHistory.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7CDB7C38C73E540E329A60D1 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F8CEA275A229F94CEE94587B /* Network */,
+				5DA4C19AB060ACFC6A49FE7D /* Persistence */,
+				22B87AA87F8D0F8999C4D7F3 /* Repositories */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		7F4E10ACE5610887E9EA5A2F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D328E1B707858C5116CA2B6D /* FlightResultCell.swift */,
+				8069C3139DBFC8C50391817A /* SearchHistoryCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		861BC4649D550ECE9968421D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				650B00CC9FBACEF87EFE6A80 /* Airline.swift */,
+				98C53E64AB2D1D4C49059B1A /* Airport.swift */,
+				5C3461C035274ACB4B833DC1 /* Flight.swift */,
+				A169998498AEC6E52B541806 /* FlightPosition.swift */,
+				8815F3BFFA5289035410C53B /* FlightStatus.swift */,
+				B00EFB47E6537EE1B5786CDC /* SearchQuery.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		86F29FDA0458A9B8A5DB7445 /* SkyPulseUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3182FC1A6AA612F8AE87A508 /* Helpers */,
+				015D92B4C70DC5D45EBBB06A /* Pages */,
+				FA98D9322A7AFE61561F3C7B /* Screens */,
+				C3A646A4A7FD04EE8844F435 /* Tests */,
+			);
+			path = SkyPulseUITests;
+			sourceTree = "<group>";
+		};
+		94075244BE7877FFE848471B /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				1272DAE39BFF97891CA80F45 /* AppFlow.swift */,
+				F9745F3BE1A72704BF56B61F /* AppStep.swift */,
+				C38ED6E1F43FB97C22851380 /* MainFlow.swift */,
+				E5F51CB34686DB39DC43ADE2 /* MainStep.swift */,
+				72050B691091B4ED63C4D879 /* SearchStep.swift */,
+				C58ECDFAE3880BDBF232F20A /* SettingsStep.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		96F015CBC179089B13B655D3 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				852775C838556251207C1E77 /* mock_airports.json */,
+				74C57AA060D6E0F3CB561432 /* mock_flights.json */,
+				AF657AD8251E1AC28C344376 /* mock_positions.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		9B9EAE2395864C121892E388 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				290B01D248D4CCB5F87C2FA5 /* DashboardViewController.swift */,
+				70AC1D0088DA52EF372BE816 /* DashboardViewModel.swift */,
+				2C4F53E4C91811E8AFB7B920 /* Cells */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		9CC01FABD964FCF559475020 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CE6D1DE58FD91CF6547768ED /* BaseTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		AEB908EDCEFD2DF991593F52 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				BD23819D1CF54EBCAEE9B396 /* SettingsViewController.swift */,
+				0F88713998248BF094AD82C6 /* SettingsViewModel.swift */,
+				F2CD77A3ED5F8C86CFE5B47B /* Cells */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		B672862790FBCDB50391356B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				17ED5E1A9A469941B488F4A0 /* FlightModelTests.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B69ADDAF29722592DC7F4F30 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				6B48C237F5AECCB97ACBB34B /* MockFavoritesRepository.swift */,
+				3CDC9ADA1C6AA49891E2D6D4 /* MockFlightRepository.swift */,
+				E8C4974B232759A8848B17BC /* MockKeychainService.swift */,
+				B74994199DCFCF33A7AA4213 /* MockNetworkService.swift */,
+				E195C2E7A3A1882D910A5527 /* MockReachabilityService.swift */,
+				40EB6AE44CD263A64C7B7047 /* TestData.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		B7ACF3BEE42316203D964E4C /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				9659210E48DD1BC616F8C27E /* FavoritesViewController.swift */,
+				87B91AE7DDF532472E8329CF /* FavoritesViewModel.swift */,
+				F4E1C9549B1CE18C3CB9E8F6 /* Cells */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		BA23CD6745D173C4C9AF4ECB /* AviationStack */ = {
+			isa = PBXGroup;
+			children = (
+				996BBEDD3C990F56792A2FB8 /* AviationStackAPI.swift */,
+				CDBF72664A4E3657C34F9E42 /* AviationStackEndpoints.swift */,
+				3A099091BA02FD2504C67C2A /* DTOs */,
+			);
+			path = AviationStack;
+			sourceTree = "<group>";
+		};
+		BC4322E720B359B2B94D4501 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				6DA7227EA20C89CDA29A03CB /* APIEndpoint.swift */,
+				1E22E36AE9682748E6B50FAA /* HTTPMethod.swift */,
+				BE2B94AAD5AF8DBC391B7E69 /* NetworkError.swift */,
+				ABC9E93842D12F7B05F1D849 /* NetworkService.swift */,
+				415C4E5B7DA1BA6B72E83882 /* NetworkServiceAsync.swift */,
+				2BC70E9D5D5B66410EBF3246 /* ReachabilityService.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		C3A646A4A7FD04EE8844F435 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				5230A96AE4F933853D739208 /* DashboardUITests.swift */,
+				27FB5FE750079FE3A48293FC /* SearchUITests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		C54D6AB10B67907285578C0C /* FlightSearch */ = {
+			isa = PBXGroup;
+			children = (
+				5CC3BCD4E1303351E0C1A61A /* FlightSearchViewController.swift */,
+				2AE38A46B0D8422E5975B952 /* FlightSearchViewModel.swift */,
+				7F4E10ACE5610887E9EA5A2F /* Cells */,
+			);
+			path = FlightSearch;
+			sourceTree = "<group>";
+		};
+		C6BA20277D7CE0A819FD8E15 = {
+			isa = PBXGroup;
+			children = (
+				2DADB7B5415B073AADF12378 /* SkyPulse */,
+				E0323EB48E26BDF78DCFD931 /* SkyPulseTests */,
+				86F29FDA0458A9B8A5DB7445 /* SkyPulseUITests */,
+				65E7B2FE8335D22846DE9F92 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEAE7338F055EF655C82B909 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8FA100B7526A049F0762F458 /* TestSchedulerExtensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D13AF01C62226EBB89FDD8BD /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				0A6C151EC201B213179EA1D9 /* MapViewController.swift */,
+				15FC161BF593438078D94A16 /* MapViewModel.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		E0323EB48E26BDF78DCFD931 /* SkyPulseTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEAE7338F055EF655C82B909 /* Helpers */,
+				B69ADDAF29722592DC7F4F30 /* Mocks */,
+				B672862790FBCDB50391356B /* Models */,
+				09ADD16FEE91E0D92416DE10 /* Repositories */,
+				60C9F413057DEA4ADCA53974 /* Services */,
+				482768B0FC9DD7F3210F87C8 /* ViewModels */,
+			);
+			path = SkyPulseTests;
+			sourceTree = "<group>";
+		};
+		F2CD77A3ED5F8C86CFE5B47B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				829015AF90F5A0A3CA2B2F22 /* SettingsOptionCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		F4E1C9549B1CE18C3CB9E8F6 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				6B1D0BB539D141D56D71A21F /* FavoriteFlightCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		F8CEA275A229F94CEE94587B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				BA23CD6745D173C4C9AF4ECB /* AviationStack */,
+				BC4322E720B359B2B94D4501 /* Core */,
+				3AB4B72483B00E9AACCE76A1 /* Mock */,
+				3174AEB50D5C57353C9CF66E /* OpenSky */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		FA98D9322A7AFE61561F3C7B /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7D45EEF76569B854F74A04F9 /* SkyPulseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05D9A1A2EA6631494B44D467 /* Build configuration list for PBXNativeTarget "SkyPulseTests" */;
+			buildPhases = (
+				C359447E3D7A41BA61E67606 /* Sources */,
+				EFDBC4A8A02DAA8F03789CE8 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC2AB7CE7AC714D5BB97D3F2 /* PBXTargetDependency */,
+			);
+			name = SkyPulseTests;
+			packageProductDependencies = (
+				E3E8C4F5C7D14B37EFB8568F /* RxTest */,
+				947C11FA2CC8C6BB62818196 /* RxBlocking */,
+			);
+			productName = SkyPulseTests;
+			productReference = F6C1938DDCCAFCA3C0072D71 /* SkyPulseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BD5EBD0E37C2B92CEA5D3F18 /* SkyPulseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83FCE4C463B4F5EEA5DAD99C /* Build configuration list for PBXNativeTarget "SkyPulseUITests" */;
+			buildPhases = (
+				A4B108CD9C5B34336C2C567F /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9AACC0F0954A0F41D39CD7CA /* PBXTargetDependency */,
+			);
+			name = SkyPulseUITests;
+			packageProductDependencies = (
+			);
+			productName = SkyPulseUITests;
+			productReference = EF29F05146AEACA97096A89B /* SkyPulseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		C29FFF61355B022C1CA72B83 /* SkyPulse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A22E4271C9DAE54597141515 /* Build configuration list for PBXNativeTarget "SkyPulse" */;
+			buildPhases = (
+				B26A133881DF31566AA0B2CD /* Sources */,
+				E4F271AEB0445C8FA5445013 /* Resources */,
+				C16157E19D81C5DE0E5BF42D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SkyPulse;
+			packageProductDependencies = (
+				D384ABE8B949BF96C28ADC40 /* RxSwift */,
+				2571FD0F49E5421DDCBC88A6 /* RxCocoa */,
+				127BEE17D5DFA6A583F65238 /* RxRelay */,
+				FAC50E7E0F18127ED826C66F /* RxFlow */,
+				EC8208CD48B78D2CD853BC0A /* RealmSwift */,
+				A0208AE38221533EA56980C2 /* SnapKit */,
+			);
+			productName = SkyPulse;
+			productReference = 04FDBA0EC556B26D1E46923A /* SkyPulse.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		68C3CB21BBC165DD97B253BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					BD5EBD0E37C2B92CEA5D3F18 = {
+						TestTargetID = C29FFF61355B022C1CA72B83;
+					};
+					C29FFF61355B022C1CA72B83 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1F1C06F8709B345D50A774E8 /* Build configuration list for PBXProject "SkyPulse" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = C6BA20277D7CE0A819FD8E15;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				58E4D07AE4455FC35A7AF459 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				05A5C1B836CD03ED7818DAD9 /* XCRemoteSwiftPackageReference "RxFlow" */,
+				329FFF94C5812A3D26A7F13D /* XCRemoteSwiftPackageReference "RxSwift" */,
+				782FC1534A5D2C04B3B80D25 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C29FFF61355B022C1CA72B83 /* SkyPulse */,
+				7D45EEF76569B854F74A04F9 /* SkyPulseTests */,
+				BD5EBD0E37C2B92CEA5D3F18 /* SkyPulseUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E4F271AEB0445C8FA5445013 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				340AFE0D87865AD1BFE28876 /* Assets.xcassets in Resources */,
+				06171C618931AA0673E565FA /* LaunchScreen.storyboard in Resources */,
+				26E6862EC4312E2746F95DB5 /* Localizable.strings in Resources */,
+				F862ED9721179F06F7DCD8EA /* mock_airports.json in Resources */,
+				B9A3031A0455D11D0FBCE024 /* mock_flights.json in Resources */,
+				71545A4E78FB705E3FE2A8A4 /* mock_positions.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A4B108CD9C5B34336C2C567F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F26EDD60C94368941A99B20 /* DashboardPage.swift in Sources */,
+				E02897DA8A984A916BB18AE0 /* DashboardUITests.swift in Sources */,
+				16501BCBDCDF1420CB8AA189 /* SearchPage.swift in Sources */,
+				8FDE8BBDFE4E51DA4204599A /* SearchUITests.swift in Sources */,
+				25B0E7516B24F1FD7601C06D /* XCUIApplicationLaunch.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B26A133881DF31566AA0B2CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E10495649B825A900A60E99 /* APIEndpoint.swift in Sources */,
+				3FC55C2CC9591F276DE857CF /* ASAirportResponse.swift in Sources */,
+				2BC5C3F02623022E22464961 /* ASFlightResponse.swift in Sources */,
+				B993DB8FEC5E45E714197341 /* ActiveFlightCell.swift in Sources */,
+				2C3F4459C636E1CE0B3BD626 /* Airline.swift in Sources */,
+				2765DEEAEAEA246074AEEFDB /* Airport.swift in Sources */,
+				7CC3D3097559D61C9AAD991F /* AirportBoardView.swift in Sources */,
+				ED4EB315D85D07530A003CDB /* AirportBoardViewController.swift in Sources */,
+				236B4896A5B587EDFF3D8488 /* AirportBoardViewModel.swift in Sources */,
+				5C60AE0C434B6980C90F2AAF /* AirportRealmMapper.swift in Sources */,
+				18E3DBD1D1442C045E277539 /* AirportRepository.swift in Sources */,
+				8CFB217212963382FF471188 /* AirportRepositoryProtocol.swift in Sources */,
+				07521699124167CD6562C942 /* AppConfiguration.swift in Sources */,
+				CB30F0E40AE7F64D1C96A9DF /* AppDelegate.swift in Sources */,
+				6172E83C6F218229AD301F5A /* AppFlow.swift in Sources */,
+				2134AF8EBD3D66955CD4FBF3 /* AppStep.swift in Sources */,
+				99450DFC2191138C6B1C1BF8 /* AviationStackAPI.swift in Sources */,
+				93DCD97D9DE549D0D73E74EA /* AviationStackEndpoints.swift in Sources */,
+				9A42464C1EA860E0EF053188 /* BaseTableViewCell.swift in Sources */,
+				BDD98E43E639E8503D699DDF /* BaseViewController.swift in Sources */,
+				3E97261E25BB197C1EAE4F2D /* Configurable.swift in Sources */,
+				96AACA0DD9643CE95AB741DD /* Constants.swift in Sources */,
+				5675FDF4E8F8F1C6B937ECAA /* DIContainer.swift in Sources */,
+				BD9DE00561D8AFF92BE2EDA5 /* DashboardViewController.swift in Sources */,
+				43241D973A07265D3A8FF891 /* DashboardViewModel.swift in Sources */,
+				0D3730C4A8CE4EA6E080D43B /* Date+Formatting.swift in Sources */,
+				F7FE9D2D1F5BF4255A859835 /* DateFormatters.swift in Sources */,
+				234663B80E826B4BC2EC626D /* EmptyStateView.swift in Sources */,
+				20A91BA50EAAD4CAAAD8164E /* FavoriteFlightCell.swift in Sources */,
+				0B98610678698C9E5DDBF14A /* FavoritesRepository.swift in Sources */,
+				D82D6A611C0220782664A2EE /* FavoritesRepositoryProtocol.swift in Sources */,
+				F5F5E8602E44D0F0E0B75B87 /* FavoritesViewController.swift in Sources */,
+				30B348914B1384616D70BCA8 /* FavoritesViewModel.swift in Sources */,
+				5E053439234098CAC2CFE7EE /* FetchAirportBoardUseCase.swift in Sources */,
+				9CEE5C5AF784A302284B965A /* FetchFlightsUseCase.swift in Sources */,
+				76DFED4557CDE83EAA730985 /* Flight.swift in Sources */,
+				A706FAD1180DA98ED22C47DD /* FlightCardView.swift in Sources */,
+				860BBB755183303BAA3530C7 /* FlightDetailViewController.swift in Sources */,
+				5D863F8386878D7C9536B797 /* FlightDetailViewModel.swift in Sources */,
+				27770E30153E7642D8641640 /* FlightInfoSection.swift in Sources */,
+				27275A73C8EA311A3ED5DB3C /* FlightMonitorService.swift in Sources */,
+				197159DBC841186CBD741E7C /* FlightPosition.swift in Sources */,
+				AA78395127ACB69E4D6A65F2 /* FlightRealmMapper.swift in Sources */,
+				8D4B9184EBC4028323518473 /* FlightRepository.swift in Sources */,
+				187D64ADBB79ED5FA4B53D13 /* FlightRepositoryProtocol.swift in Sources */,
+				DA605F1A64AD0DF08D7E7828 /* FlightResultCell.swift in Sources */,
+				A72277BC4384C3F9EC7D75B9 /* FlightRouteSection.swift in Sources */,
+				D7515B8C7994A03DF5249851 /* FlightSearchViewController.swift in Sources */,
+				6FE09DD44B9B9DA99A86C0B8 /* FlightSearchViewModel.swift in Sources */,
+				9E7D13CB9479E0AF3CE03FB9 /* FlightStatus.swift in Sources */,
+				3E54DEA0AD0ABFB2DFB8C407 /* FlightStatusSection.swift in Sources */,
+				6D305DB03CA1EA01703803F8 /* HTTPMethod.swift in Sources */,
+				384108171A8B7FD19358FF9F /* KeychainService.swift in Sources */,
+				463E11A579CF0D2D720FEC4E /* LoadingView.swift in Sources */,
+				6F266216CA5A49C5272F80F2 /* LocationService.swift in Sources */,
+				9F21E45CA9AAEA67480350A3 /* Logger.swift in Sources */,
+				FD3CA41E7E130C1DC86EEB92 /* MainFlow.swift in Sources */,
+				908F83DE8244F7876FE3550D /* MainStep.swift in Sources */,
+				BA00BAE44922F96B5AFAB3E3 /* ManageFavoritesUseCase.swift in Sources */,
+				6D2EDE1A78C8A2E0D3021099 /* MapViewController.swift in Sources */,
+				ABC2DF40388494CBFAA2C0EF /* MapViewModel.swift in Sources */,
+				164DE3F85D7373C91C96E8F1 /* MockDataProvider.swift in Sources */,
+				549B1B2B61C1A046195F9809 /* NetworkError.swift in Sources */,
+				78C03DBAB90C1D8AF038E230 /* NetworkService.swift in Sources */,
+				52706A52B00181A7A54988D7 /* NetworkServiceAsync.swift in Sources */,
+				86F30CC411461FB8AC4344C7 /* NotificationService.swift in Sources */,
+				2B43F77E1920F17F1BC51C5C /* OSStateVectorResponse.swift in Sources */,
+				8326C033D218E80285528D86 /* Observable+Extensions.swift in Sources */,
+				49954B25C3C4CC82EE1F50D1 /* OpenSkyAPI.swift in Sources */,
+				79E78AEB9DC8F77D5332BDBC /* OpenSkyEndpoints.swift in Sources */,
+				DEE8396F149D851A1DAE8242 /* ReachabilityService.swift in Sources */,
+				202E5476E08E2BDF256099DB /* RealmAirport.swift in Sources */,
+				314DA3D8BC71CD3FB0677B28 /* RealmFavorite.swift in Sources */,
+				80F0BAA9BC325FB90E00F402 /* RealmFlight.swift in Sources */,
+				8BFAEC412872932389EE6B89 /* RealmManager.swift in Sources */,
+				8CDA00641C8FC71306124DD0 /* RealmSearchHistory.swift in Sources */,
+				C27AA8EB7B62DBEF66BE3AFF /* SceneDelegate.swift in Sources */,
+				398792A44AF601644319F5D9 /* SearchFlightsUseCase.swift in Sources */,
+				782AC16B9B8E01C07431FAE4 /* SearchHistoryCell.swift in Sources */,
+				6B08CF7ECC503C362C5A83A4 /* SearchQuery.swift in Sources */,
+				0496E27F6501B1D7B937E530 /* SearchStep.swift in Sources */,
+				7AAD30732E9487611BBD722B /* SettingsOptionCell.swift in Sources */,
+				759C106E966E7417C73268FF /* SettingsStep.swift in Sources */,
+				BBF00D8DA8E3A6DBA30312E6 /* SettingsViewController.swift in Sources */,
+				3555AFB3B1C01B63AAC636D2 /* SettingsViewModel.swift in Sources */,
+				EBE22F169C3B5DB0E867625E /* SplashViewController.swift in Sources */,
+				69E73DEFCA715D901DDDD758 /* SplashViewModel.swift in Sources */,
+				3ADE08835DBB7B5CE3B9361D /* StatusBadgeView.swift in Sources */,
+				45EFA752BDE69F1F46623481 /* String+Validation.swift in Sources */,
+				4F6D04C396988451DB2A6105 /* TrackFlightUseCase.swift in Sources */,
+				B2111EE1F2D50CB70686583E /* Typealiases.swift in Sources */,
+				61F6C66FEC5B884DA21D998F /* UIColor+Theme.swift in Sources */,
+				0F26A85E770C5278F821FB53 /* UIFont+Theme.swift in Sources */,
+				1916A0298F29AAF8563AD3F5 /* UIView+Animations.swift in Sources */,
+				568D0D1961A2FBE3B6B06AF9 /* UIViewController+Rx.swift in Sources */,
+				EAD99FAD118F8407E7A4DBDF /* ViewModelType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C359447E3D7A41BA61E67606 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E274E12DE8F18F254BFB8935 /* AirportBoardViewModelTests.swift in Sources */,
+				2A59B3B7D315CD9F87EAC2F7 /* DashboardViewModelTests.swift in Sources */,
+				CB6EE852A53A76890261C945 /* FavoritesRepositoryTests.swift in Sources */,
+				36C51AAE48FBF73FB96354AE /* FavoritesViewModelTests.swift in Sources */,
+				BE8D2CA93107C2ED0A665C07 /* FlightDetailViewModelTests.swift in Sources */,
+				B0D3DA8593C35C84AA4BA388 /* FlightModelTests.swift in Sources */,
+				0AABE9D125195FAB0E32D666 /* FlightMonitorServiceTests.swift in Sources */,
+				BDB3BA1653D1B4F53AB64645 /* FlightRepositoryTests.swift in Sources */,
+				F981F88ACDD5DB9069396366 /* FlightSearchViewModelTests.swift in Sources */,
+				C06DBDE494AE109C3C8F61D0 /* KeychainServiceTests.swift in Sources */,
+				D777CC99223BF839CE38F02A /* MockFavoritesRepository.swift in Sources */,
+				268AF390D0FE40A4D3A51546 /* MockFlightRepository.swift in Sources */,
+				0F5220117DEA97F02BD2F687 /* MockKeychainService.swift in Sources */,
+				D8E057A38CCB431B107B38EF /* MockNetworkService.swift in Sources */,
+				8A2660BB525C4BC28FF548BF /* MockReachabilityService.swift in Sources */,
+				EB0231CF6DE1AE8F71AD53BA /* TestData.swift in Sources */,
+				5AB7A68CC9F24EF483F110B8 /* TestSchedulerExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9AACC0F0954A0F41D39CD7CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C29FFF61355B022C1CA72B83 /* SkyPulse */;
+			targetProxy = 10CCBC0347F2665CC0F7CE4D /* PBXContainerItemProxy */;
+		};
+		BC2AB7CE7AC714D5BB97D3F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C29FFF61355B022C1CA72B83 /* SkyPulse */;
+			targetProxy = 2245FE352BA15F1CB9A7E93C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		193745F1FCB327EDA701B7B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SkyPulse/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.skypulse.app;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5534BAA278383ECC68B61E10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6FCD27F92C992A2A3553F353 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.skypulse.SkyPulseUITests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SkyPulse;
+			};
+			name = Release;
+		};
+		8966366F2B10C66DD0DD1F64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.skypulse.SkyPulseUITests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SkyPulse;
+			};
+			name = Debug;
+		};
+		8DA6F718063A94F7426265FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		B1CB1273EA7B20D71EC05DAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SkyPulse/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.skypulse.app;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DE8B289C1294E69B00FE8513 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.skypulse.SkyPulseTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SkyPulse.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SkyPulse";
+			};
+			name = Debug;
+		};
+		F33390C21C30DFF4FFA82D44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.skypulse.SkyPulseTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SkyPulse.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SkyPulse";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		05D9A1A2EA6631494B44D467 /* Build configuration list for PBXNativeTarget "SkyPulseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE8B289C1294E69B00FE8513 /* Debug */,
+				F33390C21C30DFF4FFA82D44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		1F1C06F8709B345D50A774E8 /* Build configuration list for PBXProject "SkyPulse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5534BAA278383ECC68B61E10 /* Debug */,
+				8DA6F718063A94F7426265FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		83FCE4C463B4F5EEA5DAD99C /* Build configuration list for PBXNativeTarget "SkyPulseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8966366F2B10C66DD0DD1F64 /* Debug */,
+				6FCD27F92C992A2A3553F353 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A22E4271C9DAE54597141515 /* Build configuration list for PBXNativeTarget "SkyPulse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				193745F1FCB327EDA701B7B6 /* Debug */,
+				B1CB1273EA7B20D71EC05DAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		05A5C1B836CD03ED7818DAD9 /* XCRemoteSwiftPackageReference "RxFlow" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxFlow.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.13.0;
+			};
+		};
+		329FFF94C5812A3D26A7F13D /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.7.1;
+			};
+		};
+		58E4D07AE4455FC35A7AF459 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.54.0;
+			};
+		};
+		782FC1534A5D2C04B3B80D25 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		127BEE17D5DFA6A583F65238 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 329FFF94C5812A3D26A7F13D /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		2571FD0F49E5421DDCBC88A6 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 329FFF94C5812A3D26A7F13D /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		947C11FA2CC8C6BB62818196 /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 329FFF94C5812A3D26A7F13D /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+		A0208AE38221533EA56980C2 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 782FC1534A5D2C04B3B80D25 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		D384ABE8B949BF96C28ADC40 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 329FFF94C5812A3D26A7F13D /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		E3E8C4F5C7D14B37EFB8568F /* RxTest */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 329FFF94C5812A3D26A7F13D /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxTest;
+		};
+		EC8208CD48B78D2CD853BC0A /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 58E4D07AE4455FC35A7AF459 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		FAC50E7E0F18127ED826C66F /* RxFlow */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 05A5C1B836CD03ED7818DAD9 /* XCRemoteSwiftPackageReference "RxFlow" */;
+			productName = RxFlow;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 68C3CB21BBC165DD97B253BA /* Project object */;
+}

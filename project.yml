@@ -1,0 +1,67 @@
+name: SkyPulse
+options:
+  bundleIdPrefix: com.skypulse
+  deploymentTarget:
+    iOS: "15.0"
+  generateEmptyDirectories: true
+settings:
+  base:
+    SWIFT_VERSION: "5.9"
+    TARGETED_DEVICE_FAMILY: "1"
+packages:
+  RxSwift:
+    url: https://github.com/ReactiveX/RxSwift.git
+    majorVersion: 6.7.1
+  RxFlow:
+    url: https://github.com/RxSwiftCommunity/RxFlow.git
+    majorVersion: 2.13.0
+  Realm:
+    url: https://github.com/realm/realm-swift.git
+    majorVersion: 10.54.0
+  SnapKit:
+    url: https://github.com/SnapKit/SnapKit.git
+    majorVersion: 5.7.1
+targets:
+  SkyPulse:
+    type: application
+    platform: iOS
+    sources:
+      - SkyPulse
+    settings:
+      base:
+        INFOPLIST_FILE: SkyPulse/Resources/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.skypulse.app
+        CODE_SIGN_STYLE: Automatic
+    dependencies:
+      - package: RxSwift
+        product: RxSwift
+      - package: RxSwift
+        product: RxCocoa
+      - package: RxSwift
+        product: RxRelay
+      - package: RxFlow
+      - package: Realm
+        product: RealmSwift
+      - package: SnapKit
+  SkyPulseTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - SkyPulseTests
+    dependencies:
+      - target: SkyPulse
+      - package: RxSwift
+        product: RxTest
+      - package: RxSwift
+        product: RxBlocking
+    settings:
+      base:
+        BUNDLE_LOADER: "$(TEST_HOST)"
+        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/SkyPulse.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SkyPulse"
+  SkyPulseUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - SkyPulseUITests
+    dependencies:
+      - target: SkyPulse

@@ -1,0 +1,14 @@
+[
+  { "icao_code": "UUEE", "iata_code": "SVO", "name": "Sheremetyevo International Airport", "city": "Moscow", "country": "Russia", "latitude": 55.9726, "longitude": 37.4146, "timezone": "Europe/Moscow" },
+  { "icao_code": "UUDD", "iata_code": "DME", "name": "Domodedovo International Airport", "city": "Moscow", "country": "Russia", "latitude": 55.4088, "longitude": 37.9063, "timezone": "Europe/Moscow" },
+  { "icao_code": "ULLI", "iata_code": "LED", "name": "Pulkovo Airport", "city": "Saint Petersburg", "country": "Russia", "latitude": 59.8003, "longitude": 30.2625, "timezone": "Europe/Moscow" },
+  { "icao_code": "EGLL", "iata_code": "LHR", "name": "Heathrow Airport", "city": "London", "country": "United Kingdom", "latitude": 51.4700, "longitude": -0.4543, "timezone": "Europe/London" },
+  { "icao_code": "EDDF", "iata_code": "FRA", "name": "Frankfurt Airport", "city": "Frankfurt", "country": "Germany", "latitude": 50.0333, "longitude": 8.5706, "timezone": "Europe/Berlin" },
+  { "icao_code": "LFPG", "iata_code": "CDG", "name": "Charles de Gaulle Airport", "city": "Paris", "country": "France", "latitude": 49.0097, "longitude": 2.5479, "timezone": "Europe/Paris" },
+  { "icao_code": "KJFK", "iata_code": "JFK", "name": "John F. Kennedy International Airport", "city": "New York", "country": "United States", "latitude": 40.6413, "longitude": -73.7781, "timezone": "America/New_York" },
+  { "icao_code": "OMDB", "iata_code": "DXB", "name": "Dubai International Airport", "city": "Dubai", "country": "United Arab Emirates", "latitude": 25.2532, "longitude": 55.3657, "timezone": "Asia/Dubai" },
+  { "icao_code": "LTFM", "iata_code": "IST", "name": "Istanbul Airport", "city": "Istanbul", "country": "Turkey", "latitude": 41.2753, "longitude": 28.7519, "timezone": "Europe/Istanbul" },
+  { "icao_code": "UNNT", "iata_code": "OVB", "name": "Tolmachevo Airport", "city": "Novosibirsk", "country": "Russia", "latitude": 55.0126, "longitude": 82.6507, "timezone": "Asia/Novosibirsk" },
+  { "icao_code": "RJTT", "iata_code": "HND", "name": "Haneda Airport", "city": "Tokyo", "country": "Japan", "latitude": 35.5494, "longitude": 139.7798, "timezone": "Asia/Tokyo" },
+  { "icao_code": "VHHH", "iata_code": "HKG", "name": "Hong Kong International Airport", "city": "Hong Kong", "country": "China", "latitude": 22.3080, "longitude": 113.9185, "timezone": "Asia/Hong_Kong" }
+]
