@@ -97,6 +97,15 @@ final class FlightSearchViewController: BaseViewController {
         setupUI()
         setupConstraints()
         bindViewModel()
+
+        // Скрытие клавиатуры при тапе по пустой области.
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+
+    @objc private func dismissKeyboard() {
+        searchBar.resignFirstResponder()
     }
 
     // MARK: - Биндинги
@@ -106,7 +115,9 @@ final class FlightSearchViewController: BaseViewController {
         let searchText = searchBar.rx.text.orEmpty.asObservable()
             .distinctUntilChanged()
 
+        // Скрываем клавиатуру при нажатии кнопки «Поиск».
         let searchTrigger = searchBar.rx.searchButtonClicked.asObservable()
+            .do(onNext: { [weak self] in self?.searchBar.resignFirstResponder() })
 
         let cancelTrigger = searchBar.rx.cancelButtonClicked.asObservable()
             .do(onNext: { [weak self] in
@@ -233,7 +244,7 @@ final class FlightSearchViewController: BaseViewController {
         )
         emptyResultView.isHidden = true
 
-        searchBar.showsCancelButton = true
+        searchBar.showsCancelButton = false
     }
 
     private func setupConstraints() {
