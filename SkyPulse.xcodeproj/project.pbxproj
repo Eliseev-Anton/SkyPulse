@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 63;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -159,7 +159,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04FDBA0EC556B26D1E46923A /* SkyPulse.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = SkyPulse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04FDBA0EC556B26D1E46923A /* SkyPulse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyPulse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05111BBB586282140057A1CB /* OpenSkyEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSkyEndpoints.swift; sourceTree = "<group>"; };
 		0600306F61771BA06FCB35F0 /* AirportRealmMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportRealmMapper.swift; sourceTree = "<group>"; };
 		0693B6AA18BCB976EAAD64F7 /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
@@ -1013,7 +1013,6 @@
 				329FFF94C5812A3D26A7F13D /* XCRemoteSwiftPackageReference "RxSwift" */,
 				782FC1534A5D2C04B3B80D25 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
-			preferredProjectObjectVersion = 77;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -1199,7 +1198,6 @@
 		193745F1FCB327EDA701B7B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SkyPulse/Resources/Info.plist;
@@ -1369,7 +1367,6 @@
 		B1CB1273EA7B20D71EC05DAC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SkyPulse/Resources/Info.plist;
